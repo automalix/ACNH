@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+    <main id="main">
+      <div class="dropdown">
+        <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()" />
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#Juicy-Apple TV" data-hex="006">Juicy-Apple TV</a>
+          <a href="#Pear Wardrobe" data-hex="009">Pear Wardrobe</a>
+          <a href="#Flimsy Axe" data-hex="00A">Flimsy Axe</a>
+          <a href="#Campfire" data-hex="00D">Campfire</a>
+          <a href="#Doghouse" data-hex="00E">Doghouse</a>
+          <a href="#Wooden Chair" data-hex="00F">Wooden Chair</a>
+          <a href="#Wooden Bucket" data-hex="010">Wooden Bucket</a>
+          <a href="#Wooden Chest" data-hex="011">Wooden Chest</a>
+          <a href="#Wooden Simple Bed" data-hex="012">Wooden Simple Bed</a>
+          <a href="#Flimsy Shovel" data-hex="013">Flimsy Shovel</a>
+          <a href="#Flimsy Watering Can" data-hex="014">Flimsy Watering Can</a>
+          <a href="#Flimsy Fishing Rod" data-hex="015">Flimsy Fishing Rod</a>
+          <a href="#Flimsy Net" data-hex="016">Flimsy Net</a>
+          <a href="#Wooden-Block Bench" data-hex="017">Wooden-Block Bench</a>
+          <a href="#Wooden-Block Chest" data-hex="018">Wooden-Block Chest</a>
+          <a href="#Wooden-Block Table" data-hex="01A">Wooden-Block Table</a>
+          <a href="#Slingshot" data-hex="01D">Slingshot</a>
+          <a href="#Aroma Pot" data-hex="01E">Aroma Pot</a>
+          <a href="#Mush Table" data-hex="020">Mush Table</a>
+          <a href="#Tea Table" data-hex="021">Tea Table</a>
+          <a href="#Bonfire" data-hex="022">Bonfire</a>
+          <a href="#Ironwood Table" data-hex="023">Ironwood Table</a>
+          <a href="#Simple Well" data-hex="024">Simple Well</a>
+          <a href="#Pot" data-hex="025">Pot</a>
+          <a href="#Wooden-Block Toy" data-hex="026">Wooden-Block Toy</a>
+          <a href="#Birdhouse" data-hex="029">Birdhouse</a>
+          <a href="#Birdbath" data-hex="02A">Birdbath</a>
+          <a href="#Ringtoss" data-hex="02B">Ringtoss</a>
+          <a href="#Acoustic Guitar" data-hex="02C">Acoustic Guitar</a>
+          <a href="#Ukulele" data-hex="02D">Ukulele</a>
+          <a href="#Bamboo Bench" data-hex="02E">Bamboo Bench</a>
+          <a href="#Garden Rock" data-hex="030">Garden Rock</a>
+          <a href="#Tall Garden Rock" data-hex="031">Tall Garden Rock</a>
+          <a href="#Mush Lamp" data-hex="033">Mush Lamp</a>
+          <a href="#Wave Breaker" data-hex="037">Wave Breaker</a>
+          <a href="#Fruit Basket" data-hex="038">Fruit Basket</a>
+          <a href="#Rocking Chair" data-hex="039">Rocking Chair</a>
+          <a href="#Brick Oven" data-hex="03A">Brick Oven</a>
+          <a href="#Swinging Bench" data-hex="03B">Swinging Bench</a>
+          <a href="#Tire Stack" data-hex="03C">Tire Stack</a>
+          <a href="#Wooden-Block Bed" data-hex="03D">Wooden-Block Bed</a>
+          <a href="#Wooden-Block Bookshelf" data-hex="03E">Wooden-Block Bookshelf</a>
+          <a href="#Iron Garden Bench" data-hex="03F">Iron Garden Bench</a>
+          <a href="#Iron Garden Chair" data-hex="040">Iron Garden Chair</a>
+          <a href="#Iron Garden Table" data-hex="041">Iron Garden Table</a>
+          <a href="#Trash Bags" data-hex="042">Trash Bags</a>
+          <a href="#Drinking Fountain" data-hex="04D">Drinking Fountain</a>
+          <a href="#Tire Toy" data-hex="04E">Tire Toy</a>
+          <a href="#Iron Frame" data-hex="04F">Iron Frame</a>
+          <a href="#Natural Garden Chair" data-hex="050">Natural Garden Chair</a>
+          <a href="#Gold Bars" data-hex="051">Gold Bars</a>
+          <a href="#Mini DIY Workbench" data-hex="052">Mini DIY Workbench</a>
+          <a href="#Ironwood Chair" data-hex="053">Ironwood Chair</a>
+          <a href="#Ironwood Low Table" data-hex="054">Ironwood Low Table</a>
+          <a href="#Ironwood Cart" data-hex="055">Ironwood Cart</a>
+          <a href="#Ironwood Dresser" data-hex="056">Ironwood Dresser</a>
+          <a href="#Ironwood Bed" data-hex="057">Ironwood Bed</a>
+          <a href="#Wooden-Block Stereo" data-hex="059">Wooden-Block Stereo</a>
+          <a href="#Wooden-Block Wall-clock" data-hex="05A">Wooden-Block Wall-clock</a>
+          <a href="#Ironwood Kitchenette" data-hex="05B">Ironwood Kitchenette</a>
+          <a href="#Ironwood Cupboard" data-hex="05C">Ironwood Cupboard</a>
+          <a href="#Ironwood Clock" data-hex="05E">Ironwood Clock</a>
+          <a href="#Brick Fence" data-hex="063">Brick Fence</a>
+          <a href="#Vertical Board Fence" data-hex="064">Vertical Board Fence</a>
+          <a href="#Bamboo Lattice Fence" data-hex="065">Bamboo Lattice Fence</a>
+          <a href="#Rocking horse" data-hex="066">Rocking horse</a>
+          <a href="#Tiki Torch" data-hex="067">Tiki Torch</a>
+          <a href="#Stone Stool" data-hex="068">Stone Stool</a>
+          <a href="#Stone Table" data-hex="069">Stone Table</a>
+          <a href="#Ladder" data-hex="06B">Ladder</a>
+          <a href="#Log-Extra-Long Sofa" data-hex="06E">Log-Extra-Long Sofa</a>
+          <a href="#Log Brown Table" data-hex="06F">Log Brown Table</a>
+          <a href="#Log Bench" data-hex="070">Log Bench</a>
+          <a href="#Log Garden Lounge" data-hex="071">Log Garden Lounge</a>
+          <a href="#Log Decorative Shelves" data-hex="072">Log Decorative Shelves</a>
+          <a href="#Log Wall-Mounted Flock" data-hex="073">Log Wall-Mounted Flock</a>
+          <a href="#Log Stool" data-hex="074">Log Stool</a>
+          <a href="#Log Sofa" data-hex="075">Log Sofa</a>
+          <a href="#Log Dining Table" data-hex="076">Log Dining Table</a>
+          <a href="#Log Bed" data-hex="077">Log Bed</a>
+          <a href="#Unglazed Dish Set" data-hex="078">Unglazed Dish Set</a>
+          <a href="#Floral Swag" data-hex="079">Floral Swag</a>
+          <a href="#Iron Wall Lamp" data-hex="07A">Iron Wall Lamp</a>
+          <a href="#Iron Wall Rack" data-hex="07B">Iron Wall Rack</a>
+          <a href="#Garden Bench" data-hex="07C">Garden Bench</a>
+          <a href="#Ironwood DIY Workbench" data-hex="07D">Ironwood DIY Workbench</a>
+          <a href="#Iron Worktable" data-hex="07E">Iron Worktable</a>
+          <a href="#Iron Shelf" data-hex="080">Iron Shelf</a>
+          <a href="#Golden Candlestick" data-hex="082">Golden Candlestick</a>
+          <a href="#Golden Dishes" data-hex="083">Golden Dishes</a>
+          <a href="#Libra Scale" data-hex="084">Libra Scale</a>
+          <a href="#Golden Seat" data-hex="085">Golden Seat</a>
+          <a href="#Mush Log" data-hex="088">Mush Log</a>
+          <a href="#Mush Partition" data-hex="08A">Mush Partition</a>
+          <a href="#Mush Parasol" data-hex="08B">Mush Parasol</a>
+          <a href="#Frozen Arch" data-hex="08C">Frozen Arch</a>
+          <a href="#Frozen Sculpture" data-hex="08D">Frozen Sculpture</a>
+          <a href="#Frozen Chair" data-hex="08E">Frozen Chair</a>
+          <a href="#Frozen Counter" data-hex="08F">Frozen Counter</a>
+          <a href="#Frozen Tree" data-hex="091">Frozen Tree</a>
+          <a href="#Frozen Table" data-hex="092">Frozen Table</a>
+          <a href="#Frozen Partition" data-hex="093">Frozen Partition</a>
+          <a href="#Frozen Pillar" data-hex="094">Frozen Pillar</a>
+          <a href="#Frozen Bed" data-hex="095">Frozen Bed</a>
+          <a href="#Bamboo Wall decoration" data-hex="097">Bamboo Wall decoration</a>
+          <a href="#Bamboo Basket" data-hex="098">Bamboo Basket</a>
+          <a href="#Bamboo Candleholder" data-hex="099">Bamboo Candleholder</a>
+          <a href="#Bamboo StopBlock" data-hex="09A">Bamboo StopBlock</a>
+          <a href="#Stone Table" data-hex="09B">Stone Table</a>
+          <a href="#Bamboo Partition" data-hex="09D">Bamboo Partition</a>
+          <a href="#Bamboo Doll" data-hex="09E">Bamboo Doll</a>
+          <a href="#Bamboo Floor Lamp" data-hex="09F">Bamboo Floor Lamp</a>
+          <a href="#Wooden-Block Chair" data-hex="0A0">Wooden-Block Chair</a>
+          <a href="#Cherry Speaker" data-hex="0A1">Cherry Speaker</a>
+          <a href="#Cherry Lamp" data-hex="0A2">Cherry Lamp</a>
+          <a href="#Coconut Juice" data-hex="0A3">Coconut Juice</a>
+          <a href="#Clackercart" data-hex="0A4">Clackercart</a>
+          <a href="#Barrel" data-hex="0A5">Barrel</a>
+          <a href="#Plain Wooden Shop Sign" data-hex="0A6">Plain Wooden Shop Sign</a>
+          <a href="#Hay Bed" data-hex="0A7">Hay Bed</a>
+          <a href="#Wooden Stool" data-hex="0A8">Wooden Stool</a>
+          <a href="#Standard Umbrella Stand" data-hex="09A">Standard Umbrella Stand</a>
+          <a href="#Wooden End Table" data-hex="0AA">Wooden End Table</a>
+          <a href="#Boomerang" data-hex="0AB">Boomerang</a>
+          <a href="#Wooden Wardrobe" data-hex="0AC">Wooden Wardrobe</a>
+          <a href="#Wooden Waste Bin" data-hex="0AD">Wooden Waste Bin</a>
+          <a href="#Plain Sink" data-hex="0AE">Plain Sink</a>
+          <a href="#Shell Arch" data-hex="0AF">Shell Arch</a>
+          <a href="#Shell Partition" data-hex="0B0">Shell Partition</a>
+          <a href="#Shell Stool" data-hex="0B1">Shell Stool</a>
+          <a href="#Shell Table" data-hex="0B2">Shell Table</a>
+          <a href="#No Name" data-hex="0B3">No Name</a>
+          <a href="#Shell Fountain" data-hex="0B4">Shell Fountain</a>
+          <a href="#Shell Bed" data-hex="0B5">Shell Bed</a>
+          <a href="#Shell Lamp" data-hex="0B6">Shell Lamp</a>
+          <a href="#Vaulting Pole" data-hex="0B7">Vaulting Pole</a>
+          <a href="#Orange Wall-Mounted Clock" data-hex="0B8">Orange Wall-Mounted Clock</a>
+          <a href="#Orange End Table" data-hex="0B9">Orange End Table</a>
+          <a href="#Pear Bed" data-hex="0BA">Pear Bed</a>
+          <a href="#Peach Chair" data-hex="0BB">Peach Chair</a>
+          <a href="#Peach Surprise Box" data-hex="0BC">Peach Surprise Box</a>
+          <a href="#Apple Chair" data-hex="0BD">Apple Chair</a>
+          <a href="#Succulent Plant" data-hex="0BE">Succulent Plant</a>
+          <a href="#Fish Bait" data-hex="0BF">Fish Bait</a>
+          <a href="#Classic Pitcher" data-hex="0C0">Classic Pitcher</a>
+          <a href="#Wooden Fish" data-hex="0C1">Wooden Fish</a>
+          <a href="#Frozen-Treat Set" data-hex="0C2">Frozen-Treat Set</a>
+          <a href="#Old-Fashioned Washtub" data-hex="0C3">Old-Fashioned Washtub</a>
+          <a href="#Stack Of Books" data-hex="0C4">Stack Of Books</a>
+          <a href="#Stacked Magazines" data-hex="0C5">Stacked Magazines</a>
+          <a href="#Frying Pan" data-hex="0C7">Frying Pan</a>
+          <a href="#Shell Speaker" data-hex="0C8">Shell Speaker</a>
+          <a href="#Wooden Table" data-hex="0C9">Wooden Table</a>
+          <a href="#Illuminated Tree" data-hex="0CB">Illuminated Tree</a>
+          <a href="#Beekeeper's hive" data-hex="0CC">Beekeeper's hive</a>
+          <a href="#Signpost" data-hex="0D5">Signpost</a>
+          <a href="#Potted Ivy" data-hex="0D6">Potted Ivy</a>
+          <a href="#Music Stand" data-hex="0D7">Music Stand</a>
+          <a href="#Birdcage" data-hex="0D8">Birdcage</a>
+          <a href="#Hearth" data-hex="0D9">Hearth</a>
+          <a href="#Ocarina" data-hex="0DA">Ocarina</a>
+          <a href="#Shell Wreath" data-hex="0DB">Shell Wreath</a>
+          <a href="#Mush Low Stool" data-hex="0DC">Mush Low Stool</a>
+          <a href="#Mushroom Wreath" data-hex="0DD">Mushroom Wreath</a>
+          <a href="#Snowflake Wreath" data-hex="0DE">Snowflake Wreath</a>
+          <a href="#Fruit Wreath" data-hex="0DF">Fruit Wreath</a>
+          <a href="#Natural Garden Table" data-hex="0E0">Natural Garden Table</a>
+          <a href="#Tree-Branch Wreath" data-hex="0E1">Tree-Branch Wreath</a>
+          <a href="#Ornament Wreath" data-hex="0E2">Ornament Wreath</a>
+          <a href="#Cosmos Wreath" data-hex="0E3">Cosmos Wreath</a>
+          <a href="#Windflower Wreath" data-hex="0E4">Windflower Wreath</a>
+          <a href="#Rose Wreath" data-hex="0E5">Rose Wreath</a>
+          <a href="#Pansies Wreath" data-hex="0E6">Pansies Wreath</a>
+          <a href="#Mum Wreath" data-hex="0E7">Mum Wreath</a>
+          <a href="#Hyacinths Wreath" data-hex="0E8">Hyacinths Wreath</a>
+          <a href="#Flying Saucer" data-hex="0E9">Flying Saucer</a>
+          <a href="#Moon" data-hex="0EA">Moon</a>
+          <a href="#Asteroid" data-hex="0EB">Asteroid</a>
+          <a href="#Astronaut Suit" data-hex="0EC">Astronaut Suit</a>
+          <a href="#Hyacinth Crown" data-hex="0ED">Hyacinth Crown</a>
+          <a href="#Cool Hyacinth Crown" data-hex="0EE">Cool Hyacinth Crown</a>
+          <a href="#Purple Hyacinth Crown" data-hex="0EF">Purple Hyacinth Crown</a>
+          <a href="#Windflower Crown" data-hex="0F0">Windflower Crown</a>
+          <a href="#Cool Windflower Crown" data-hex="0F1">Cool Windflower Crown</a>
+          <a href="#Purple Windflower Crown" data-hex="0F2">Purple Windflower Crown</a>
+          <a href="#Tulip Crown" data-hex="0F3">Tulip Crown</a>
+          <a href="#Chic Tulip Crown" data-hex="0F4">Chic Tulip Crown</a>
+          <a href="#Dark Tulip Crown" data-hex="0F5">Dark Tulip Crown</a>
+          <a href="#Pansy Crown" data-hex="0F6">Pansy Crown</a>
+          <a href="#Cool Pansy Crown" data-hex="0F7">Cool Pansy Crown</a>
+          <a href="#Purple Pansy Crown" data-hex="0F8">Purple Pansy Crown</a>
+          <a href="#cosmos Crown" data-hex="0F9">cosmos Crown</a>
+          <a href="#Lovely Cosmos Crown" data-hex="0FA">Lovely Cosmos Crown</a>
+          <a href="#Dark Cosmos Crown" data-hex="0FB">Dark Cosmos Crown</a>
+          <a href="#Rose Crown" data-hex="0FC">Rose Crown</a>
+          <a href="#Cute Rose Crown" data-hex="0FD">Cute Rose Crown</a>
+          <a href="#Chic Rose Crown" data-hex="0FE">Chic Rose Crown</a>
+          <a href="#Lily Crown" data-hex="0FF">Lily Crown</a>
+          <a href="#Cute Lily Crown" data-hex="100">Cute Lily Crown</a>
+          <a href="#Dark Lily Crown" data-hex="101">Dark Lily Crown</a>
+          <a href="#Mum Crown" data-hex="102">Mum Crown</a>
+          <a href="#Chic Mum Crown" data-hex="103">Chic Mum Crown</a>
+          <a href="#Simple Mum Crown" data-hex="104">Simple Mum Crown</a>
+          <a href="#Leaf" data-hex="105">Leaf</a>
+          <a href="#Golden Toilet" data-hex="106">Golden Toilet</a>
+          <a href="#DIY Workbench" data-hex="107">DIY Workbench</a>
+          <a href="#Pitfall Seed" data-hex="108">Pitfall Seed</a>
+          <a href="#Stone Fence" data-hex="10A">Stone Fence</a>
+          <a href="#Iron Fence" data-hex="10B">Iron Fence</a>
+          <a href="#Concrete Fence" data-hex="10C">Concrete Fence</a>
+          <a href="#Corral Fence" data-hex="10D">Corral Fence</a>
+          <a href="#Axe" data-hex="10F">Axe</a>
+          <a href="#Big Festive Tree" data-hex="111">Big Festive Tree</a>
+          <a href="#Festive Tree" data-hex="112">Festive Tree</a>
+          <a href="#Manhole Cover" data-hex="115">Manhole Cover</a>
+          <a href="#Tiny Library" data-hex="116">Tiny Library</a>
+          <a href="#Wooden-plank Sign" data-hex="117">Wooden-plank Sign</a>
+          <a href="#Watering Can" data-hex="118">Watering Can</a>
+          <a href="#Shovel" data-hex="119">Shovel</a>
+          <a href="#Fishing Rod" data-hex="11A">Fishing Rod</a>
+          <a href="#Net" data-hex="11B">Net</a>
+          <a href="#Cutting Board" data-hex="11C">Cutting Board</a>
+          <a href="#Stone Axe" data-hex="11D">Stone Axe</a>
+          <a href="#Starry Wall" data-hex="11E">Starry Wall</a>
+          <a href="#Ice Flooring" data-hex="120">Ice Flooring</a>
+          <a href="#Iceberg Flooring" data-hex="121">Iceberg Flooring</a>
+          <a href="#Autumn Wall" data-hex="122">Autumn Wall</a>
+          <a href="#Jingle Wall" data-hex="123">Jingle Wall</a>
+          <a href="#Sci-fi Wall" data-hex="124">Sci-fi Wall</a>
+          <a href="#Ice Wall" data-hex="125">Ice Wall</a>
+          <a href="#Starry-sky Wall" data-hex="126">Starry-sky Wall</a>
+          <a href="#Ski-slope Wall" data-hex="127">Ski-slope Wall</a>
+          <a href="#Honeycomb Wall" data-hex="128">Honeycomb Wall</a>
+          <a href="#Gold-screen Wall" data-hex="12A">Gold-screen Wall</a>
+          <a href="#Golden Wall" data-hex="12B">Golden Wall</a>
+          <a href="#Bamboo-grove Wall" data-hex="12C">Bamboo-grove Wall</a>
+          <a href="#Garbage-heap Wall" data-hex="12D">Garbage-heap Wall</a>
+          <a href="#Iceberg Wall" data-hex="12E">Iceberg Wall</a>
+          <a href="#Orange Wall" data-hex="12F">Orange Wall</a>
+          <a href="#Apple Wall" data-hex="130">Apple Wall</a>
+          <a href="#Pear Wall" data-hex="131">Pear Wall</a>
+          <a href="#Peach Wall" data-hex="132">Peach Wall</a>
+          <a href="#Cherry Wall" data-hex="133">Cherry Wall</a>
+          <a href="#Mush Wall" data-hex="134">Mush Wall</a>
+          <a href="#Wild-Wood Wall" data-hex="135">Wild-Wood Wall</a>
+          <a href="#Wooden-Mosaic Wall" data-hex="136">Wooden-Mosaic Wall</a>
+          <a href="#Dark-Wooden-Mosaic Wall" data-hex="137">Dark-Wooden-Mosaic Wall</a>
+          <a href="#Brown Herringbone Wall" data-hex="138">Brown Herringbone Wall</a>
+          <a href="#Chocolate Herringbone Wall" data-hex="139">Chocolate Herringbone Wall</a>
+          <a href="#Stacked-Wood Wall" data-hex="13A">Stacked-Wood Wall</a>
+          <a href="#Cabin Wall" data-hex="13B">Cabin Wall</a>
+          <a href="#Manga-Library Wall" data-hex="13C">Manga-Library Wall</a>
+          <a href="#Classic-Library Wall" data-hex="13D">Classic-Library Wall</a>
+          <a href="#Stone Wall" data-hex="13E">Stone Wall</a>
+          <a href="#Wooden-knot Wall" data-hex="13F">Wooden-knot Wall</a>
+          <a href="#Modern Wood Wall" data-hex="140">Modern Wood Wall</a>
+          <a href="#Sakura-Wood Wall" data-hex="141">Sakura-Wood Wall</a>
+          <a href="#Bamboo Wall" data-hex="142">Bamboo Wall</a>
+          <a href="#Snowflake Wall" data-hex="143">Snowflake Wall</a>
+          <a href="#Rustic-stone Wall" data-hex="144">Rustic-stone Wall</a>
+          <a href="#steel-frame Wall" data-hex="145">steel-frame Wall</a>
+          <a href="#Jungle Wall" data-hex="146">Jungle Wall</a>
+          <a href="#Deer Scare" data-hex="167">Deer Scare</a>
+          <a href="#Tulip Wreath" data-hex="168">Tulip Wreath</a>
+          <a href="#Pretty Tulip Wreath" data-hex="169">Pretty Tulip Wreath</a>
+          <a href="#Dark Tulip Wreath" data-hex="16A">Dark Tulip Wreath</a>
+          <a href="#Three-tiered Snowperson" data-hex="16C">Three-tiered Snowperson</a>
+          <a href="#Iron hanger Stand" data-hex="16D">Iron hanger Stand</a>
+          <a href="#Aquarius Urn" data-hex="16E">Aquarius Urn</a>
+          <a href="#Aries Rocking Chair" data-hex="16F">Aries Rocking Chair</a>
+          <a href="#Virgo Harp" data-hex="170">Virgo Harp</a>
+          <a href="#Capricorn Ornament" data-hex="172">Capricorn Ornament</a>
+          <a href="#Cancer Table" data-hex="173">Cancer Table</a>
+          <a href="#Deer Decoration" data-hex="174">Deer Decoration</a>
+          <a href="#Lunar Rover" data-hex="175">Lunar Rover</a>
+          <a href="#Sonar heater" data-hex="176">Sonar heater</a>
+          <a href="#Cherry-Blossom Bonsai" data-hex="177">Cherry-Blossom Bonsai</a>
+          <a href="#Sagittarius Arrow" data-hex="178">Sagittarius Arrow</a>
+          <a href="#Gemini Closet" data-hex="179">Gemini Closet</a>
+          <a href="#Rustic-Stone Wall" data-hex="17A">Rustic-Stone Wall</a>
+          <a href="#Satellite" data-hex="17B">Satellite</a>
+          <a href="#Scorpio Lamp" data-hex="17C">Scorpio Lamp</a>
+          <a href="#Space Shuttle" data-hex="17D">Space Shuttle</a>
+          <a href="#Steamer-basket Set" data-hex="17E">Steamer-basket Set</a>
+          <a href="#Destinations Sign Post" data-hex="17F">Destinations Sign Post</a>
+          <a href="#Taurus Bathtub" data-hex="180">Taurus Bathtub</a>
+          <a href="#Bamboo-shoot Lamp" data-hex="181">Bamboo-shoot Lamp</a>
+          <a href="#Lunar Lander" data-hex="182">Lunar Lander</a>
+          <a href="#Wooden-Block Stool" data-hex="183">Wooden-Block Stool</a>
+          <a href="#Tabletop Festive Tree" data-hex="184">Tabletop Festive Tree</a>
+          <a href="#Water Pump" data-hex="185">Water Pump</a>
+          <a href="#Decoy Duck" data-hex="186">Decoy Duck</a>
+          <a href="#Terrarium" data-hex="187">Terrarium</a>
+          <a href="#Illuminated Reindeer" data-hex="188">Illuminated Reindeer</a>
+          <a href="#Gong" data-hex="189">Gong</a>
+          <a href="#Oil-Barrel Bathtub" data-hex="18A">Oil-Barrel Bathtub</a>
+          <a href="#Barbell" data-hex="18B">Barbell</a>
+          <a href="#Hanging Terrarium" data-hex="18C">Hanging Terrarium</a>
+          <a href="#Bamboo drum" data-hex="18D">Bamboo drum</a>
+          <a href="#Pan Flute" data-hex="18E">Pan Flute</a>
+          <a href="#Pisces Lamp" data-hex="18F">Pisces Lamp</a>
+          <a href="#Infused-water dispenser" data-hex="190">Infused-water dispenser</a>
+          <a href="#Illuminated Present" data-hex="191">Illuminated Present</a>
+          <a href="#FireWood" data-hex="192">FireWood</a>
+          <a href="#Matrioshka" data-hex="193">Matrioshka</a>
+          <a href="#Wooden Bookshelf" data-hex="194">Wooden Bookshelf</a>
+          <a href="#Coconut Wall Planter" data-hex="195">Coconut Wall Planter</a>
+          <a href="#Illuminated Snowflakes" data-hex="196">Illuminated Snowflakes</a>
+          <a href="#Leo Sculpture" data-hex="197">Leo Sculpture</a>
+          <a href="#Brick Well" data-hex="198">Brick Well</a>
+          <a href="#Rocket" data-hex="199">Rocket</a>
+          <a href="#Outdoor Bath" data-hex="19A">Outdoor Bath</a>
+          <a href="#Traditional Balancing Toy" data-hex="19B">Traditional Balancing Toy</a>
+          <a href="#Log Stakes" data-hex="19C">Log Stakes</a>
+          <a href="#Magazine Rack" data-hex="19D">Magazine Rack</a>
+          <a href="#Tree-bounty Mobile" data-hex="19E">Tree-bounty Mobile</a>
+          <a href="#Trees-bounty Lamp" data-hex="19F">Trees-bounty Lamp</a>
+          <a href="#Trees-bounty Little Tree" data-hex="1A0">Trees-bounty Little Tree</a>
+          <a href="#Cherry-Blossom Branches" data-hex="1A1">Cherry-Blossom Branches</a>
+          <a href="#Cherry-Blossom-Petal Pile" data-hex="1A2">Cherry-Blossom-Petal Pile</a>
+          <a href="#Pisces Lamp" data-hex="1A3">Pisces Lamp</a>
+          <a href="#Bamboo Sphere" data-hex="1A4">Bamboo Sphere</a>
+          <a href="#Bamboo Lunch Box" data-hex="1A5">Bamboo Lunch Box</a>
+          <a href="#Outdoor Picnic Set" data-hex="1A6">Outdoor Picnic Set</a>
+          <a href="#Trees-bounty Arch" data-hex="1A7">Trees-bounty Arch</a>
+          <a href="#Bamboo Noodle Slide" data-hex="1A8">Bamboo Noodle Slide</a>
+          <a href="#Cherry-Blossom Clock" data-hex="1AA">Cherry-Blossom Clock</a>
+          <a href="#Blossom-viewing Lantern" data-hex="1AB">Blossom-viewing Lantern</a>
+          <a href="#Nova Light" data-hex="1AD">Nova Light</a>
+          <a href="#Starry Garland" data-hex="1AE">Starry Garland</a>
+          <a href="#Crescent-moon Chair" data-hex="1B1">Crescent-moon Chair</a>
+          <a href="#Ornament Mobile" data-hex="1B2">Ornament Mobile</a>
+          <a href="#Crewed Spaceship" data-hex="1B3">Crewed Spaceship</a>
+          <a href="#Jailbars" data-hex="1B4">Jailbars</a>
+          <a href="#Wild Log Bench" data-hex="1B5">Wild Log Bench</a>
+          <a href="#Key Holder" data-hex="1B6">Key Holder</a>
+          <a href="#Lily Wreath" data-hex="1B8">Lily Wreath</a>
+          <a href="#Chic Windflower Wreath" data-hex="1B9">Chic Windflower Wreath</a>
+          <a href="#Natural Mum Wreath" data-hex="1BA">Natural Mum Wreath</a>
+          <a href="#Fancy Mum Wreath" data-hex="1BB">Fancy Mum Wreath</a>
+          <a href="#Chic Cosmos Wreath" data-hex="1BC">Chic Cosmos Wreath</a>
+          <a href="#Pretty Cosmos Wreath" data-hex="1BD">Pretty Cosmos Wreath</a>
+          <a href="#Dark Rose Wreath" data-hex="1BE">Dark Rose Wreath</a>
+          <a href="#Blue Rose Wreath" data-hex="1BF">Blue Rose Wreath</a>
+          <a href="#Fancy Rose Wreath" data-hex="1C0">Fancy Rose Wreath</a>
+          <a href="#Gold Rose Wreath" data-hex="1C1">Gold Rose Wreath</a>
+          <a href="#Cool Pansy Wreath" data-hex="1C2">Cool Pansy Wreath</a>
+          <a href="#Snazzy Pansy Wreath" data-hex="1C3">Snazzy Pansy Wreath</a>
+          <a href="#Purple Hyacinth Wreath" data-hex="1C4">Purple Hyacinth Wreath</a>
+          <a href="#Cool Hyacinth Wreath" data-hex="1C5">Cool Hyacinth Wreath</a>
+          <a href="#Dark Lily Wreath" data-hex="1C6">Dark Lily Wreath</a>
+          <a href="#Fancy Lily Wreath" data-hex="1C7">Fancy Lily Wreath</a>
+          <a href="#Leaf Umbrella" data-hex="1C8">Leaf Umbrella</a>
+          <a href="#Clothesline" data-hex="1C9">Clothesline</a>
+          <a href="#Bridge Construction Kit" data-hex="1CA">Bridge Construction Kit</a>
+          <a href="#Blue Rose Crown" data-hex="1CB">Blue Rose Crown</a>
+          <a href="#Gold Rose Crown" data-hex="1CC">Gold Rose Crown</a>
+          <a href="#Campsite Construction Kit" data-hex="1CD">Campsite Construction Kit</a>
+          <a href="#Document Stack" data-hex="1CE">Document Stack</a>
+          <a href="#Scattered Papers" data-hex="1CF">Scattered Papers</a>
+          <a href="#Fossil doorplate" data-hex="1D0">Fossil doorplate</a>
+          <a href="#Timber doorplate" data-hex="1D1">Timber doorplate</a>
+          <a href="#Paw-print doorplate" data-hex="1D2">Paw-print doorplate</a>
+          <a href="#Bone doorplate" data-hex="1D3">Bone doorplate</a>
+          <a href="#Iron doorplate" data-hex="1D4">Iron doorplate</a>
+          <a href="#Brest doorplate" data-hex="1D5">Brest doorplate</a>
+          <a href="#Jungle Flooring" data-hex="1D6">Jungle Flooring</a>
+          <a href="#Woodland Wall" data-hex="1D7">Woodland Wall</a>
+          <a href="#Honeycomb Flooring" data-hex="1D8">Honeycomb Flooring</a>
+          <a href="#Money Flooring" data-hex="1D9">Money Flooring</a>
+          <a href="#Basement Flooring" data-hex="1DA">Basement Flooring</a>
+          <a href="#Golden Flooring" data-hex="1DB">Golden Flooring</a>
+          <a href="#Colored-leaves Flooring" data-hex="1DC">Colored-leaves Flooring</a>
+          <a href="#Sci-fi Flooring" data-hex="1DD">Sci-fi Flooring</a>
+          <a href="#Lunar Surface" data-hex="1DE">Lunar Surface</a>
+          <a href="#Cherry-Blossom Flooring" data-hex="1DF">Cherry-Blossom Flooring</a>
+          <a href="#Cherry-Blossom Trees Wall" data-hex="1E0">Cherry-Blossom Trees Wall</a>
+          <a href="#Galaxy Flooring" data-hex="1E2">Galaxy Flooring</a>
+          <a href="#Ski-slope Flooring" data-hex="1E3">Ski-slope Flooring</a>
+          <a href="#Forest Wall" data-hex="1E4">Forest Wall</a>
+          <a href="#Bamboo Flooring" data-hex="1E5">Bamboo Flooring</a>
+          <a href="#Garbage-heap Flooring" data-hex="1E6">Garbage-heap Flooring</a>
+          <a href="#Backyard Lawn" data-hex="1E7">Backyard Lawn</a>
+          <a href="#Forest Flooring" data-hex="1E8">Forest Flooring</a>
+          <a href="#Steel Flooring" data-hex="1E9">Steel Flooring</a>
+          <a href="#Kettle Bathtub" data-hex="1EA">Kettle Bathtub</a>
+          <a href="#Wooden Low Table" data-hex="1EB">Wooden Low Table</a>
+          <a href="#Wooden Mini Table" data-hex="1EC">Wooden Mini Table</a>
+          <a href="#Wooden double Bed" data-hex="1ED">Wooden double Bed</a>
+          <a href="#Simple DIY Workbench" data-hex="1EE">Simple DIY Workbench</a>
+          <a href="#Tulip Surprise Box" data-hex="1EF">Tulip Surprise Box</a>
+          <a href="#Cardboard Table" data-hex="1F0">Cardboard Table</a>
+          <a href="#Cardboard Bed" data-hex="1F1">Cardboard Bed</a>
+          <a href="#Cardboard Chair" data-hex="1F2">Cardboard Chair</a>
+          <a href="#Cardboard Sofa" data-hex="1F4">Cardboard Sofa</a>
+          <a href="#Cosmos Shower" data-hex="1F5">Cosmos Shower</a>
+          <a href="#Wooden Full-lings Mirror" data-hex="1F6">Wooden Full-lings Mirror</a>
+          <a href="#Windflower Fan" data-hex="1F7">Windflower Fan</a>
+          <a href="#Recycled-can Thumb Piano" data-hex="1F8">Recycled-can Thumb Piano</a>
+          <a href="#Mum Cushion" data-hex="1F9">Mum Cushion</a>
+          <a href="#Hyacinth Lamp" data-hex="1FA">Hyacinth Lamp</a>
+          <a href="#Rose Bed" data-hex="1FB">Rose Bed</a>
+          <a href="#Butter Churn" data-hex="1FC">Butter Churn</a>
+          <a href="#Leaf Campfire" data-hex="1FD">Leaf Campfire</a>
+          <a href="#Angled Signpost" data-hex="1FE">Angled Signpost</a>
+          <a href="#Cherry-Blossom Pond Stone" data-hex="1FF">Cherry-Blossom Pond Stone</a>
+          <a href="#Maple-leaf Pond Stone" data-hex="200">Maple-leaf Pond Stone</a>
+          <a href="#Pond Stone" data-hex="201">Pond Stone</a>
+          <a href="#Star Clock" data-hex="202">Star Clock</a>
+          <a href="#Lily Record Player" data-hex="203">Lily Record Player</a>
+          <a href="#Pansy Table" data-hex="204">Pansy Table</a>
+          <a href="#Western-style Stone" data-hex="206">Western-style Stone</a>
+          <a href="#Leaf Stool" data-hex="207">Leaf Stool</a>
+          <a href="#Raccoon Figurine" data-hex="208">Raccoon Figurine</a>
+          <a href="#Pile Of Den Cushions" data-hex="209">Pile Of Den Cushions</a>
+          <a href="#Star Wand" data-hex="20B">Star Wand</a>
+          <a href="#Hyacinth Wand" data-hex="20C">Hyacinth Wand</a>
+          <a href="#Windflower Wand" data-hex="20D">Windflower Wand</a>
+          <a href="#Tulip Wand" data-hex="20E">Tulip Wand</a>
+          <a href="#Pansy Wand" data-hex="20F">Pansy Wand</a>
+          <a href="#Cosmos Wand" data-hex="210">Cosmos Wand</a>
+          <a href="#Rose Wand" data-hex="211">Rose Wand</a>
+          <a href="#Lily Wand" data-hex="212">Lily Wand</a>
+          <a href="#Mums Wand" data-hex="213">Mums Wand</a>
+          <a href="#Wand" data-hex="214">Wand</a>
+          <a href="#Ice Wand" data-hex="215">Ice Wand</a>
+          <a href="#Shell Wand" data-hex="216">Shell Wand</a>
+          <a href="#Tree-branch Wand" data-hex="217">Tree-branch Wand</a>
+          <a href="#Mushroom Wand" data-hex="218">Mushroom Wand</a>
+          <a href="#Cherry-Blossom Wand" data-hex="219">Cherry-Blossom Wand</a>
+          <a href="#Bamboo Wand" data-hex="21A">Bamboo Wand</a>
+          <a href="#Golden Wand" data-hex="21B">Golden Wand</a>
+          <a href="#Iron Wand" data-hex="21C">Iron Wand</a>
+          <a href="#Maple-leaf Umbrella" data-hex="21D">Maple-leaf Umbrella</a>
+          <a href="#Apple Rug" data-hex="21E">Apple Rug</a>
+          <a href="#Cherry Rug" data-hex="21F">Cherry Rug</a>
+          <a href="#Orange Rug" data-hex="220">Orange Rug</a>
+          <a href="#Peach Rug" data-hex="221">Peach Rug</a>
+          <a href="#Pear Rug" data-hex="222">Pear Rug</a>
+          <a href="#Rope Fence" data-hex="225">Rope Fence</a>
+          <a href="#Imperial Fence" data-hex="226">Imperial Fence</a>
+          <a href="#Straw Fence" data-hex="228">Straw Fence</a>
+          <a href="#Spiky Fence" data-hex="229">Spiky Fence</a>
+          <a href="#Iron-end-stone Fence" data-hex="22B">Iron-end-stone Fence</a>
+          <a href="#Zen Fence" data-hex="22C">Zen Fence</a>
+          <a href="#Barbed-wire Fence" data-hex="231">Barbed-wire Fence</a>
+          <a href="#Underwater Flooring" data-hex="234">Underwater Flooring</a>
+          <a href="#Water Flooring" data-hex="235">Water Flooring</a>
+          <a href="#Gold Armor" data-hex="236">Gold Armor</a>
+          <a href="#Medicine" data-hex="237">Medicine</a>
+          <a href="#Zen-style Stone" data-hex="238">Zen-style Stone</a>
+          <a href="#Golden Casket" data-hex="239">Golden Casket</a>
+          <a href="#Stone Lion-dog" data-hex="23A">Stone Lion-dog</a>
+          <a href="#Garden Wagon" data-hex="23B">Garden Wagon</a>
+          <a href="#Wooden Table Mirror" data-hex="23C">Wooden Table Mirror</a>
+          <a href="#Iron Closet" data-hex="23D">Iron Closet</a>
+          <a href="#Modeling Clay" data-hex="23E">Modeling Clay</a>
+          <a href="#Palm-Tree Lamp" data-hex="23F">Palm-Tree Lamp</a>
+          <a href="#Trophy Case" data-hex="240">Trophy Case</a>
+          <a href="#Giant Teddy Bear" data-hex="241">Giant Teddy Bear</a>
+          <a href="#Lucky Gold Cat" data-hex="242">Lucky Gold Cat</a>
+          <a href="#Wooden Tool Box" data-hex="243">Wooden Tool Box</a>
+          <a href="#Sleigh" data-hex="244">Sleigh</a>
+          <a href="#Grass Standee" data-hex="246">Grass Standee</a>
+          <a href="#Hedge Standee" data-hex="247">Hedge Standee</a>
+          <a href="#Mountain Standee" data-hex="248">Mountain Standee</a>
+          <a href="#Tree Standee" data-hex="249">Tree Standee</a>
+          <a href="#Pile Of Leaves" data-hex="24A">Pile Of Leaves</a>
+          <a href="#Green-leaf Pile" data-hex="24B">Green-leaf Pile</a>
+          <a href="#Yellow-leaf Pile" data-hex="24C">Yellow-leaf Pile</a>
+          <a href="#Red-leaf Pile" data-hex="24D">Red-leaf Pile</a>
+          <a href="#Bamboo Stool" data-hex="24E">Bamboo Stool</a>
+          <a href="#Bamboo Speaker" data-hex="24F">Bamboo Speaker</a>
+          <a href="#Pine Bonsai Tree" data-hex="250">Pine Bonsai Tree</a>
+          <a href="#Bonsai Shelf" data-hex="251">Bonsai Shelf</a>
+          <a href="#Robot Hero" data-hex="252">Robot Hero</a>
+          <a href="#Golden Gears" data-hex="253">Golden Gears</a>
+          <a href="#Stall" data-hex="254">Stall</a>
+          <a href="#Silo" data-hex="256">Silo</a>
+          <a href="#Fountain" data-hex="257">Fountain</a>
+          <a href="#Kettlebell" data-hex="258">Kettlebell</a>
+          <a href="#Golden dung Beetle" data-hex="259">Golden dung Beetle</a>
+          <a href="#Golden Arowana Model" data-hex="25A">Golden Arowana Model</a>
+          <a href="#Grass Skirt" data-hex="25B">Grass Skirt</a>
+          <a href="#Traditional Straw Coat" data-hex="25C">Traditional Straw Coat</a>
+          <a href="#Green Grass Skirt" data-hex="25D">Green Grass Skirt</a>
+          <a href="#Straw Umbrella Hat" data-hex="25E">Straw Umbrella Hat</a>
+          <a href="#Bamboo Hat" data-hex="25F">Bamboo Hat</a>
+          <a href="#Flower Stand" data-hex="260">Flower Stand</a>
+          <a href="#small Cardboard Boxes" data-hex="261">small Cardboard Boxes</a>
+          <a href="#Medium Cardboard Boxes" data-hex="262">Medium Cardboard Boxes</a>
+          <a href="#Large Cardboard Boxes" data-hex="263">Large Cardboard Boxes</a>
+          <a href="#Cherry Dress" data-hex="264">Cherry Dress</a>
+          <a href="#Cherry Hat" data-hex="265">Cherry Hat</a>
+          <a href="#Cherry Umbrella" data-hex="266">Cherry Umbrella</a>
+          <a href="#Pear Dress" data-hex="267">Pear Dress</a>
+          <a href="#Pear Hat" data-hex="268">Pear Hat</a>
+          <a href="#Pear Umbrella" data-hex="269">Pear Umbrella</a>
+          <a href="#Peach Dress" data-hex="26A">Peach Dress</a>
+          <a href="#Peach Hat" data-hex="26B">Peach Hat</a>
+          <a href="#Peach Umbrella" data-hex="26C">Peach Umbrella</a>
+          <a href="#Apple Dress" data-hex="26D">Apple Dress</a>
+          <a href="#Apple Hat" data-hex="26E">Apple Hat</a>
+          <a href="#Apple Umbrella" data-hex="26F">Apple Umbrella</a>
+          <a href="#Orange Hat" data-hex="270">Orange Hat</a>
+          <a href="#orange Umbrella" data-hex="271">orange Umbrella</a>
+          <a href="#Orange Dress" data-hex="272">Orange Dress</a>
+          <a href="#Star Pochette" data-hex="273">Star Pochette</a>
+          <a href="#Star Head" data-hex="274">Star Head</a>
+          <a href="#Cherry-Blossom Umbrella" data-hex="275">Cherry-Blossom Umbrella</a>
+          <a href="#Cherry-Blossom Pochette" data-hex="276">Cherry-Blossom Pochette</a>
+          <a href="#Maple-leaf Pochette" data-hex="277">Maple-leaf Pochette</a>
+          <a href="#Acorn Pochette" data-hex="278">Acorn Pochette</a>
+          <a href="#Snowflake Pochette" data-hex="279">Snowflake Pochette</a>
+          <a href="#Shellfish Pochette" data-hex="27A">Shellfish Pochette</a>
+          <a href="#Leaf Mask" data-hex="27B">Leaf Mask</a>
+          <a href="#Knitted-Grass Backpack" data-hex="27C">Knitted-Grass Backpack</a>
+          <a href="#Snowperson Head" data-hex="27D">Snowperson Head</a>
+          <a href="#Log Pack" data-hex="27E">Log Pack</a>
+          <a href="#Iron Armor" data-hex="280">Iron Armor</a>
+          <a href="#Knights Helmet" data-hex="281">Knights Helmet</a>
+          <a href="#Armor Shoes" data-hex="282">Armor Shoes</a>
+          <a href="#Gold-armor Shoes" data-hex="283">Gold-armor Shoes</a>
+          <a href="#Gold Helmet" data-hex="284">Gold Helmet</a>
+          <a href="#Basket Pack" data-hex="285">Basket Pack</a>
+          <a href="#Flat Garden Rock" data-hex="286">Flat Garden Rock</a>
+          <a href="#Mossy Garden Rock" data-hex="287">Mossy Garden Rock</a>
+          <a href="#Mush Umbrella" data-hex="288">Mush Umbrella</a>
+          <a href="#Sakura-Wood Flooring" data-hex="289">Sakura-Wood Flooring</a>
+          <a href="#Festive Top Set" data-hex="28A">Festive Top Set</a>
+          <a href="#Stone Tablet" data-hex="28B">Stone Tablet</a>
+          <a href="#Stone Arch" data-hex="28C">Stone Arch</a>
+          <a href="#Tall Lantern" data-hex="28D">Tall Lantern</a>
+          <a href="#Street Piano" data-hex="28E">Street Piano</a>
+          <a href="#Scarecrow" data-hex="28F">Scarecrow</a>
+          <a href="#simple Wooden Fence" data-hex="290">simple Wooden Fence</a>
+          <a href="#Lattice Fence" data-hex="291">Lattice Fence</a>
+          <a href="#Golden Net" data-hex="292">Golden Net</a>
+          <a href="#Golden Watering Can" data-hex="293">Golden Watering Can</a>
+          <a href="#Golden Shovel" data-hex="294">Golden Shovel</a>
+          <a href="#Golden Slingshot" data-hex="295">Golden Slingshot</a>
+          <a href="#Golden Rod" data-hex="296">Golden Rod</a>
+          <a href="#Golden Axe" data-hex="297">Golden Axe</a>
+          <a href="#recycled Boots" data-hex="298">recycled Boots</a>
+          <a href="#Underwater Wall" data-hex="299">Underwater Wall</a>
+          <a href="#Tropical Vista" data-hex="29A">Tropical Vista</a>
+          <a href="#Starry-sands Flooring" data-hex="29B">Starry-sands Flooring</a>
+          <a href="#Shell Rug" data-hex="29C">Shell Rug</a>
+          <a href="#Sandy-Beach Flooring" data-hex="29D">Sandy-Beach Flooring</a>
+          <a href="#Natural Square Table" data-hex="29E">Natural Square Table</a>
+          <a href="#Light Bamboo Rug" data-hex="29F">Light Bamboo Rug</a>
+          <a href="#Dark Bamboo Rug" data-hex="2A0">Dark Bamboo Rug</a>
+          <a href="#Earth-Egg Shell" data-hex="2A1">Earth-Egg Shell</a>
+          <a href="#Earth-Egg Outfit" data-hex="2A2">Earth-Egg Outfit</a>
+          <a href="#Earth-Egg Shoes" data-hex="2A3">Earth-Egg Shoes</a>
+          <a href="#Stone-Egg Shell" data-hex="2A4">Stone-Egg Shell</a>
+          <a href="#Stone-Egg Outfit" data-hex="2A5">Stone-Egg Outfit</a>
+          <a href="#Stone-Egg Shoes" data-hex="2A6">Stone-Egg Shoes</a>
+          <a href="#Leaf-Egg Shell" data-hex="2A7">Leaf-Egg Shell</a>
+          <a href="#Leaf-Egg Outfit" data-hex="2A8">Leaf-Egg Outfit</a>
+          <a href="#Leaf-Egg Shoes" data-hex="2A9">Leaf-Egg Shoes</a>
+          <a href="#Water-Egg Shell" data-hex="2B0">Water-Egg Shell</a>
+          <a href="#Water-Egg Outfit" data-hex="2B1">Water-Egg Outfit</a>
+          <a href="#Water-Egg Shoes" data-hex="2B2">Water-Egg Shoes</a>
+          <a href="#Egg Party Hat" data-hex="2B3">Egg Party Hat</a>
+          <a href="#Egg Party Dress" data-hex="2B4">Egg Party Dress</a>
+          <a href="#Bunny Day Crown" data-hex="2B5">Bunny Day Crown</a>
+          <a href="#Bunny Day Bag" data-hex="2B6">Bunny Day Bag</a>
+          <a href="#Bunny Day Arch" data-hex="2B7">Bunny Day Arch</a>
+          <a href="#Wobbling Zipper Toy" data-hex="2B8">Wobbling Zipper Toy</a>
+          <a href="#Bunny Day Lamp" data-hex="2B9">Bunny Day Lamp</a>
+          <a href="#Bunny Day Festive Balloons" data-hex="2C0">Bunny Day Festive Balloons</a>
+          <a href="#Bunny Day Table" data-hex="2C1">Bunny Day Table</a>
+          <a href="#Bunny Day Wardrobe" data-hex="2C2">Bunny Day Wardrobe</a>
+          <a href="#Bunny Day Wreath" data-hex="2C3">Bunny Day Wreath</a>
+          <a href="#Bunny Day Wall" data-hex="2C4">Bunny Day Wall</a>
+          <a href="#Bunny Day Rug" data-hex="2C5">Bunny Day Rug</a>
+          <a href="#Bunny Day Flooring" data-hex="2C6">Bunny Day Flooring</a>
+          <a href="#Bunny Day Wand" data-hex="2C7">Bunny Day Wand</a>
+          <a href="#Bunny Day Fence" data-hex="2C8">Bunny Day Fence</a>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction: column;">
+        <div>
+          Final Code Output<br>
+            <textarea id="codeOutput" rows="10" cols="78" type="text"></textarea>
+        </div>
+        <div class="clicked" style="display:flex;">
+          <div>
+            Item Name<br>
+            <textarea id="selectedName" rows="12" cols="22" type="text"></textarea>
+          </div>
+          <div>
+            Hexadecimal<br>
+            <textarea id="selectedHex" rows="12" cols="22" type="text"></textarea>
+          </div>
+          <div>
+            Decimal (for NHSE)<br>
+            <textarea id="selectedDecimal" rows="12" cols="22" type="text"></textarea>
+          </div>
+          
+        </div>
+        <button id="clear">Clear</button>
+      </div>
+    </main>
+
+
+		<script src="script.js"></script>
+	</body>
+</html>
